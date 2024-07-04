@@ -4,7 +4,7 @@
 
 ## 3. Day 3 - The Pyramid
 ### Result
-
+https://github.com/trieuvy793/100DaysCSSChallenge/assets/93860211/0254415b-ba8e-422e-b27e-f7079519344e
 
 ## 2. Day 2 - Animated menu icon
 ### Result

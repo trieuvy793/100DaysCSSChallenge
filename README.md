@@ -2,6 +2,10 @@
 ### Template
 [Link đến Template](https://100dayscss.com/)
 
+## 3. Day 3 - The Pyramid
+### Result
+
+
 ## 2. Day 2 - Animated menu icon
 ### Result
 

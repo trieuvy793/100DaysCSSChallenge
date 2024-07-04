@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 1px solid white;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: night 6s infinite;
+}
+
+@keyframes night {
+  0% {opacity: 0.1;}
+  1% {opacity: 0.2;}
+  2% {opacity: 0.3;}
+  5% {opacity: 0.6;}
+  10% {opacity: 0.8;}
+  60% {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.sky {
+  background-color: skyblue;
+  position: relative;
+}
+
+.sky > div:first-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  top: 120px;
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: sunMove 6s infinite;
+}
+
+@keyframes sunMove {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(55deg);}
+  30% {transform: rotate(55deg);}
+  to {transform: rotate(180deg);}
+}
+
+.sun {
+  padding: 25px;
+  border-radius: 25px;
+  background-color: yellow;
+}
+
+.pyramid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#pyramid-right {
+  position: absolute;
+  left: calc(50% - 120px);
+  bottom: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 120px solid rgb(140, 140, 140);
+  animation: moveRight 6s infinite;
+}
+
+@keyframes moveRight {
+  0% {border-bottom-color: rgb(140, 140, 140);}
+  20% {border-bottom-color: rgb(200, 200, 200);}
+  30% {border-bottom-color: rgb(200, 200, 200);}
+  50% {border-bottom-color: white}
+  to {border-bottom-color: white}
+}
+
+#pyramid-left {
+  position: absolute;
+  left: calc(50% - 120px);
+  bottom: 0;
+  border-left: 120px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 120px solid white;
+  animation: moveLeft 6s infinite;
+}
+
+@keyframes moveLeft {
+  0% {border-bottom-color: white;}
+  40% {border-bottom-color: white;}
+  to {border-bottom-color: rgb(200, 200, 200);}
+}
+
+.sand {
+  background-color: rgb(228, 228, 126);
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: -0.5px;
+  background-color: rgba(128,128,128,0.5);
+  clip-path: polygon(55px 0%, 295px 0%, 100% 60%);
+  animation: shadowMove 6s cubic-bezier(1,1,1,1) infinite;
+}
+
+@keyframes shadowMove {
+  0% {clip-path: polygon(55px 0%, 295px 0%, 150% 10%);}
+  20% {clip-path: polygon(55px 0%, 295px 0%, 100% 60%);}
+  30% {clip-path: polygon(55px 0%, 295px 0%, 100% 60%);}
+  40% {clip-path: polygon(55px 0%, 295px 0%, 80% 30%);}
+  60% {clip-path: polygon(55px 0%, 295px 0%, 0% 60%);}
+  90% {clip-path: polygon(55px 0%, 295px 0%, 0% 5%);} 
+  to {clip-path: polygon(55px 0%, 295px 0%, 0% 5%);}
+}

@@ -4,6 +4,7 @@
 
 ## 4. Day 4 - Loading
 ### Result
+https://github.com/trieuvy793/100DaysCSSChallenge/assets/93860211/892a5adc-5bbb-4075-8c72-75cab0da6219
 
 ## 3. Day 3 - The Pyramid
 ### Result

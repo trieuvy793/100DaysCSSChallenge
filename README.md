@@ -2,6 +2,9 @@
 ### Template
 [Link đến Template](https://100dayscss.com/)
 
+## 4. Day 4 - Loading
+### Result
+
 ## 3. Day 3 - The Pyramid
 ### Result
 

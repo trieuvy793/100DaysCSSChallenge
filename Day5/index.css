@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(21, 148, 148);
+}
+
+main {
+  background-color: white;
+  width: 400px;
+  height: 310px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 14px 14px 20px rgba(0,0,0,0.2);
+}
+
+.title {
+  background-color: sandybrown;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-font {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.small-font {
+  font-size: 14px;
+}
+
+.title > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.meaning {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 22px 14px;
+  font-size: 12px;
+}
+
+.meaning > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-line {
+  width: 18px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.red {
+  background-color: #fc6b70;
+}
+
+.blue {
+  background-color: rgb(135, 175, 235);
+}
+
+.line {
+  border-top: 1px solid rgba(128,128,128,0.2);
+  margin: 0 14px;
+  height: 60px;
+}
+
+.line-1, .line-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot1, .dot2 {
+  position: relative;
+  width: 8%;
+  left: 10px;
+}
+
+.dot1 span, .dot2 span {
+  position: absolute;
+  background-color: #fc6b70;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 8px;
+  color: white;
+  border-radius: 4px;
+  bottom: 10px;
+  left: -17px;
+  cursor: default;
+  
+}
+
+.circle:hover span, .circle2:hover span{
+ bottom: 20px;
+ opacity: 1;
+ visibility: visible;
+ transition: all 0.5s ease;
+}
+
+.dot1 span::before, .dot2 span::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+  left: 40%;
+  bottom: -4px;
+  rotate: 45deg;
+}
+
+.dot2 span::before {
+  left: 34%;
+}
+
+.dot2 span {
+  background-color: rgb(135, 175, 235);
+  bottom: 10px;
+  left: -12px;
+  z-index: 3;
+}
+
+.circle, .circle2 {
+  width: 10px;
+  height: 10px;
+  background-color: #fc6b70;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.circle2 {
+  background-color: rgb(135, 175, 235);
+}
+
+.circle-1, .circle-6 {
+  bottom: -18px;
+  z-index: 2;
+}
+
+.circle-2, .circle-4 {
+ top: 12px;
+}
+
+.circle-3 {
+  top: 26px;
+}
+
+.circle-5 {
+  bottom: 0;
+}
+
+.circle-7 {
+  top: 18px;
+}
+
+.conjunction, .conjunction2 {
+  height: 3px;
+  background-color: #fc6b70;
+  position: absolute;
+  top: 22px;
+  left: 8px;
+}
+
+.conjunction2 {
+  background-color: rgb(135, 175, 235);
+}
+
+.conjunction-1 {
+  width: 80px;
+  transform: rotate(-44deg) translate(-24px,5px);
+}
+
+.conjunction-2 {
+  width: 60px;
+  transform: rotate(14deg) translate(0,1px);
+}
+
+.conjunction-3 {
+  width: 60px;
+  transform: rotate(-13deg);
+}
+
+.conjunction-4 {
+  width: 70px;
+  transform: rotate(34deg) translate(0,15px);
+}
+
+.conjunction-5 {
+  width: 60px;
+  transform: rotate(18deg) translate(10px,40px) ;
+}
+
+.conjunction-6 {
+  width: 75px;
+  transform: rotate(-42deg) translate(-26px,10px);
+}
+
+.circle2-1, .circle2-7 {
+  top: 28px;
+}
+
+.circle2-2 {
+ top: 12px;
+}
+
+.circle2-3, .circle2-5  {
+  top: 36px;
+}
+
+.circle2-4 {
+  top: 18px;
+}
+
+.circle2-6 {
+  bottom: 8px;
+}
+
+.conjunction2-1 {
+  width: 55px;
+  transform: rotate(-16deg) translate(-4px,0);
+}
+
+.conjunction2-2 {
+  width: 60px;
+  transform: rotate(24deg) translateY(8px);
+}
+
+.conjunction2-3 {
+  width: 60px;
+  transform: rotate(-18deg) translate(-8px,8px);
+}
+
+.conjunction2-4 {
+  width: 60px;
+  transform: rotate(18deg) translate(0,10px);
+}
+
+.conjunction2-5 {
+  width: 60px;
+  transform: rotate(6deg) translate(0px,21px);
+}
+
+.conjunction2-6 {
+  width: 60px;
+  transform: rotate(-14deg) translate(-10px,15px);
+}
+
+.line-3 {
+  font-size: 14px;
+  color: rgba(128,128,128,0.6);
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+}

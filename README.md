@@ -2,6 +2,9 @@
 ### Template
 [Link đến Template](https://100dayscss.com/)
 
+## 5. Day 5 - Statistic
+### Result
+
 ## 4. Day 4 - Loading
 ### Result
 

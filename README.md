@@ -7,6 +7,7 @@
 
 ## 5. Day 5 - Statistic
 ### Result
+https://github.com/trieuvy793/100DaysCSSChallenge/assets/93860211/782e0ee8-0895-4ae5-b9be-d797aa06a212
 
 ## 4. Day 4 - Loading
 ### Result

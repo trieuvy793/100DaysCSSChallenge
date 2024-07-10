@@ -4,6 +4,7 @@
 
 ## 6. Day 6 - Profile
 ### Result
+https://github.com/trieuvy793/100DaysCSSChallenge/assets/93860211/bf3acaf3-bf7d-4ee6-8cf4-67c6d4225790
 
 ## 5. Day 5 - Statistic
 ### Result

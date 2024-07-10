@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(252, 220, 181), rgb(248, 181, 99));
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  color: rgb(148, 95, 25);
+  font-weight: bold;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+.left {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left > div:first-child,
+.left > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left > div:first-child div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+#border-left {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid rgb(148, 95, 25);
+  border-right: 1px solid transparent;
+  border-radius: 100%;
+  transition: all 2s;
+  position: absolute;
+}
+
+#border-right {
+  width: 94%;
+  height: 94%;
+  background-color: transparent;
+  border: 1px solid rgb(148, 95, 25);
+  border-left: 1px solid transparent;
+  border-radius: 100%;
+  transition: all 2s;
+  position: absolute;
+}
+
+#border-middle {
+  width: 88%;
+  height: 88%;
+  border-radius: 100%;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.image:hover #border-right {
+  rotate: 360deg;
+}
+
+.image:hover #border-left {
+  rotate: -360deg;
+}
+
+
+.info p:first-child {
+ font-size: 18px;
+ margin-top: 12px;
+}
+
+.small-font {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.left > div:last-child {
+  margin-top: 30px;
+}
+
+.left > div:last-child > div {
+  font-size: 14px;
+  text-align: center;
+  width: 130px;
+  padding: 8px 0;
+  border: 1px solid rgb(148, 95, 25);
+  margin-top: 10px;
+  border-radius: 40px;
+}
+
+.left > div:last-child > div:hover {
+  background-color: rgb(148, 95, 25);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.right {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+.right > div {
+  padding: 41px 36px;
+  background-color: bisque;
+}
+
+.right > div:nth-child(2) {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.right > div:hover {
+  background-color: rgb(253, 217, 172);
+  cursor: pointer;
+  transition: all .3s ease;
+}

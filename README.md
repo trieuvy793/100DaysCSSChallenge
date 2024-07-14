@@ -4,6 +4,7 @@
 
 ## 7. Day 7 - Notifications, Search and Menu
 ### Result
+https://github.com/user-attachments/assets/498a74ce-fdc8-4801-b574-15502f40e072
 
 ## 6. Day 6 - Profile
 ### Result

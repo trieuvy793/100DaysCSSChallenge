@@ -2,6 +2,9 @@
 ### Template
 [Link đến Template](https://100dayscss.com/)
 
+## 7. Day 7 - Notifications, Search and Menu
+### Result
+
 ## 6. Day 6 - Profile
 ### Result
 

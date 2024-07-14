@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(6, 6, 69);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-left {
+  background-color: rgb(144, 177, 215);
+  width: 40%;
+  height: 72%;
+  left: 80px;
+  position: absolute;
+  border-radius: 4px;
+  color: rgb(95, 118, 144);
+  transition: all 0.6s ease;
+  display: grid;
+  padding: 10px 0;
+}
+
+.section-left div {
+  padding: 26px 0 26px 20px;
+}
+
+.section-left div:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(115, 158, 210);
+}
+
+.move-left {
+  left: 60px;
+}
+
+.section-right {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 4px;
+  position: absolute;
+  overflow: hidden;
+  right: 50px;
+  transition: all 0.6s ease;
+}
+
+.move-right {
+  right: -140px;
+}
+
+.heading {
+  background-color: rgb(102, 160, 226);
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.line, .circle, .second-line {
+  background-color: rgb(154, 201, 254);
+}
+
+.first-line {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.line {
+  width: 22px;
+  height: 4px;
+  border-radius: 10px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -3.5px;
+  right: 0;
+}
+
+.second-line {
+  width: 34px;
+  height: 4px;
+  border-radius: 10px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.menu-icon:hover .circle,
+.menu-icon:hover .line,
+.menu-icon:hover .second-line {
+  background-color: white;
+}
+
+input {
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  outline: none;
+  border: none;
+  padding: 10px 16px;
+  width: 70%;
+  border-radius: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.move-input {
+  opacity: 1;
+  visibility: visible;
+  left: 20px;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.fa-magnifying-glass:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none; 
+}
+
+.vertical {
+  width: 18px;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.vertical > div:first-child {
+  width: 4px;
+  height: 100%;
+  background-color: rgb(228, 228, 228);
+}
+
+.vertical > div:not(:first-child) {
+  width: 100%;
+  height: 18px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  border-radius: 100%;
+  top: 40px;
+}
+
+.group1 {
+  animation: move1 2s ease;
+}
+
+.group2 {
+  animation: move2 2s ease;
+}
+
+.group3 {
+  animation: move3 2s ease;
+}
+
+.group4 {
+  animation: move4 2s ease;
+}
+
+.group5 {
+  animation: move5 2s ease;
+}
+
+@keyframes move1 {
+  50% {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes move2 {
+  60% {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes move3 {
+  70% {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes move4 {
+  80% {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes move5 {
+  90% {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0px);}
+}
+
+.vertical > div > div {
+  width: 50%;
+  height: 50%;
+  border: 2px solid rgb(102, 160, 226);
+  border-radius: 100%;
+}
+
+.info {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.info > div {
+  padding-left: 30px;
+}
+
+.info > div > div:last-child {
+  padding-top: 40px;
+  margin-left: 26px;
+}
+
+.info > div > div:last-child a:hover {
+  cursor: pointer;
+  color: rgb(102, 160, 226);
+}

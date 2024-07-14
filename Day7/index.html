@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 7</title>
+  <script src="https://kit.fontawesome.com/9b9a7e4ae2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <section class="section-left">
+      <div>
+        <i class="fa-solid fa-gauge"></i>
+        Dashboard
+      </div>
+      <div>
+        <i class="fa-solid fa-user"></i>
+        Profile
+      </div>
+      <div>
+        <i class="fa-solid fa-bell"></i>
+        Notifications
+      </div>
+      <div>
+        <i class="fa-solid fa-message"></i>
+        Messages
+      </div>
+      <div>
+        <i class="fa-solid fa-gear"></i>
+        Settings
+      </div>
+    </section>
+    <section class="section-right">
+      <div class="heading">
+        <div onclick="handleMove()" class="menu-icon">
+          <div class="first-line">
+            <div class="line"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="second-line"></div>
+        </div>
+        <b>Notifications</b>
+        <div class="search">
+          <input type="text" placeholder="Search...">
+          <i onclick="handleSearch()" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="info">
+          <div>
+            <div class="vertical">
+              <div></div>
+              <div class="group1">
+                <div></div>
+              </div>
+            </div>
+            <div class="group1">
+              <a href="#">
+                <p>9:24 AM</p>
+                <p><b>John Walker</b> posted a photo on your wall.</p>  
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="vertical">
+              <div></div>
+              <div class="group2">
+                <div></div>
+              </div>
+            </div>
+            <div class="group2">
+              <a href="#">
+                <p>8:19 AM</p>
+                <p><b>Alice Parker</b> commendted your last post.</p>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="vertical">
+              <div></div>
+              <div class="group3">
+                <div></div>
+              </div>
+            </div>
+            <div class="group3">
+              <a href="#">
+                <p>Yesterday</p>
+                <p><b>Luke Wayne</b> added you as friend.</p>
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <div class="vertical">
+              <div></div>
+              <div class="group4">
+                <div></div>
+              </div>
+            </div>
+            <div class="group4">
+              <a href="#">
+                <p>Yesterday</p>
+                <p><b>Luke Parker</b> added you as friend.</p>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="vertical">
+              <div></div>
+              <div class="group5">
+                <div></div>
+              </div>
+            </div>
+            <div class="group5">
+              <a href="#">
+                <p>Yesterday</p>
+                <p><b>Luke Parker</b> added you as friend.</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
